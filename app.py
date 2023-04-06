@@ -23,7 +23,7 @@ def get_image(url, filename):
             print("Image sucessfully Downloaded: ", filename)
         return True
     else:
-        print("Image Couldn't be retreived")
+        print("Image couldn't be retreived")
         return False
 
 
