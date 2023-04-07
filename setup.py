@@ -13,10 +13,10 @@ setup(
     package_dir={"": "src"},
     packages=find_packages(where="src"),
     # install_requires=["numpy", "pandas"],
-    entry_points={
-        "console_scripts": [
-            "get-data=src.json_utils:get_json",
-            "get-image=src.image_utils:get_image",
-        ]
-    },
+    # entry_points={
+    #     "console_scripts": [
+    #         "get-data=src.json_utils:get_json",
+    #         "get-image=src.image_utils:get_image",
+    #     ]
+    # },
 )

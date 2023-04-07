@@ -5,7 +5,7 @@ import shutil
 
 import requests
 
-from src.image_utils import get_image
+from src.image_utils.get import get_image
 
 
 # define a test function that tests the get_image function
