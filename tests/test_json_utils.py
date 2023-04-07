@@ -4,7 +4,7 @@ This module contains unit tests for the json_utils module
 """
 import requests
 
-from app.json_utils import get_json
+from src.json_utils import get_json
 
 # define a test function that tests the get_json function
 # mock the response.get function using monkeypatch from pytest

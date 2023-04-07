@@ -10,12 +10,13 @@ setup(
     author="Wilson Ramirez",
     author_email="wil_ramirez02@hotmail.com",
     license="MIT",
-    packages=find_packages(),
+    package_dir={"": "src"},
+    packages=find_packages(where="src"),
     # install_requires=["numpy", "pandas"],
     entry_points={
         "console_scripts": [
-            "get-data=app.json_utils:get_json",
-            "get-image=app.image_utils:get_image",
+            "get-data=src.json_utils:get_json",
+            "get-image=src.image_utils:get_image",
         ]
     },
 )
