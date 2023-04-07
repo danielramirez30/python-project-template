@@ -1,9 +1,9 @@
+"""
+This module contains functions to download images from the web
+"""
 import shutil
 
 import requests
-
-# define a function in python that gets and image from a specific url and
-# saves it in my file system
 
 
 def get_image(url, filename):
@@ -12,20 +12,19 @@ def get_image(url, filename):
     get_image(url, filename)
     url: url of the image to download
     filename: name of the file to save the image to
-    returns: None
+    returns: Boolean
     """
-
-    response = requests.get(url, stream=True)
+    response = requests.get(url, stream=True, timeout=5)
     if response.status_code == 200:
         response.raw.decode_content = True
         # context managers Corey Schafer
-        with open(filename, "wb") as f:
-            shutil.copyfileobj(response.raw, f)
-            print("Image sucessfully Downloaded: ", filename)
+        with open(filename, "wb") as file:
+            shutil.copyfileobj(response.raw, file)
+            print("Image successfully Downloaded: ", filename)
         return True
-    else:
-        print("Image couldn't be retreived")
-        return False
+
+    print("Image couldn't be retrieved")
+    return False
 
 
 # get_image(

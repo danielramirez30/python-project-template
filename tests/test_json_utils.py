@@ -1,6 +1,10 @@
+# document test module with a docstring
+"""
+This module contains unit tests for the json_utils module
+"""
 import requests
 
-from get_data import get_json
+from app.json_utils import get_json
 
 # define a test function that tests the get_json function
 # mock the response.get function using monkeypatch from pytest
