@@ -3,7 +3,7 @@ from setuptools import find_packages, setup
 __version__ = "0.1.0"
 
 setup(
-    name="web-utils-package",
+    name="web-utils-soft",
     version=__version__,
     description="Python Project package",
     long_description="Project to set web utils to get data from the web",
