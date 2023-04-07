@@ -12,6 +12,11 @@ from app.json_utils import get_json
 
 def test_get_json(monkeypatch):
     class MockResponse:
+        """response mocked class
+        status_code: status code of the response
+        json: returns a json data dictionary
+        """
+
         def __init__(self, status_code):
             self.status_code = status_code
 
