@@ -2,6 +2,7 @@ import requests
 
 # define a function that gets json data from a url
 
+
 def get_json(url):
     """
     get_json(url)
@@ -14,6 +15,7 @@ def get_json(url):
         return data
     else:
         return False
-    
+
+
 data = get_json("https://jsonplaceholder.typicode.com/todos/1")
 print(data)

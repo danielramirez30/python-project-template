@@ -1,6 +1,8 @@
-from app import get_image
-import requests
 import shutil
+
+import requests
+
+from app import get_image
 
 # define a test function that tests the get_image function
 # use pytest framework

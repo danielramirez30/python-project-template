@@ -1,5 +1,6 @@
-import requests
 import shutil
+
+import requests
 
 # define a function in python that gets and image from a specific url and
 # saves it in my file system
