@@ -15,13 +15,13 @@ Consider adding this directory to PATH or, if you prefer to suppress this warnin
 
 Modify `PATH` system variable to use `pipenv`
 
-> `nano ~/.zshrc`
+> nano ~/.zshrc
 
 Add the next line at the end of the file
 
-> `export PATH="$PATH:/home/${REPLACE_UBUNTU_USERNAME_HERE}/.local/bin"`
+> export PATH="$PATH:/home/${REPLACE_UBUNTU_USERNAME_HERE}/.local/bin"
 
-Create `.env` file with environment variable
+Create `.env` file with environment variable (to create virtual environment inside the project folder)
 
 > PIPENV_VENV_IN_PROJECT=1
 
