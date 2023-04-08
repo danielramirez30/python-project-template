@@ -12,7 +12,8 @@ setup(
     license="MIT",
     package_dir={"": "src"},
     packages=find_packages(where="src"),
-    # install_requires=["numpy", "pandas"],
+    install_requires=["requests"],
+    include_package_data=True,
     # entry_points={
     #     "console_scripts": [
     #         "get-data=src.json_utils:get_json",

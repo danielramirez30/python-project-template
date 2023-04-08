@@ -58,3 +58,13 @@ Install commit linter hook to follow conventional commits guide [like here](http
 2. Write `Python: Select Linter`
 
 3. Select `pylint`
+
+## Working with pipenv
+
+-   To activate this project's virtual environment, run pipenv shell.
+-   Alternatively, run a command inside the virtual environment with pipenv run.
+
+## Template setup
+
+1. Set `GH_TOKEN` secret using a personal access token to use semantic release
+2. Set `PYPI_TOKEN` secret using an auth token from PyPI to upload your project
